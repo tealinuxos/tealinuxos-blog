@@ -71,7 +71,7 @@
                 </ul>
                 <div class="docs-content">
 
-                    <!-- ==================================================== -->
+                    <!-- =================================================== -->
                     <h2 class="title" id="apa-itu-tealinuxos"> Apa itu Tealinuxos</h2>
 
                     <h3 id="pengenalan-singkat" class="sub-title"> Pengenalan TealinuxOS </h3>
