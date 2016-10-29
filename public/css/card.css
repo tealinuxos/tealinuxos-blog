@@ -1,0 +1,53 @@
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('https://getmdl.io/assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+}
+
+body {
+  padding: 0px;
+  background: #fafafa;
+  position: relative;
+}
+
+
+.demo-card-wide.mdl-card {
+  width: 870px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('coffee.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.demo-layout-transparent {
+  background: url('coffee.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+/*demo-menu
+#demo-menu-top-left {
+  margin-left: 40%;
+}
+
+#demo-menu-top-left,
+#demo-menu-top-right {
+  margin-top: 250px;
+}
+
+body {
+  padding: 20px;
+  background: #fafafa;
+  position: relative;
+}*/

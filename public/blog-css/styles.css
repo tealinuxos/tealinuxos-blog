@@ -1,0 +1,1801 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+=====================
+    Material Icon
+=====================
+*/
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/*
+=====================
+    General
+=====================
+*/
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAFAFA;
+/*    padding-top: 40px;*/
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+    border: 0px;
+}
+
+::-moz-selection {
+    background-color: #6ab344;
+    color: #fff;
+}
+
+::selection {
+    background-color: #6ab344;
+    color: #fff;
+}
+
+.text-center{
+    text-align: center !important;
+}
+.bold{
+    font-weight: 900;
+}
+
+.pull-right{
+    text-align: right !important;
+}
+/*
+=====================
+    Button & Links
+=====================
+*/
+.slogan-icon{
+    font-size: 30px;
+}
+
+.tealinux-link {
+    text-decoration: none;
+    color: #6AB344 !important;
+}
+
+.tealinux-link:hover {
+    color: #008000 !important;
+}
+
+.tealinux-link .material-icons {
+    position: relative;
+    top: 6px;
+}
+
+.tealinux-link-menu:hover {
+    cursor: pointer;
+}
+
+.sistem-btn{
+    padding: 0 60px;
+    margin: 10px 20px;
+    background-color: #E6E6E6;
+    border-radius: 20px;
+    min-height: 40px;
+}
+
+.sistem-btn a{
+    color: #757575;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.join-btn{
+    padding: 0 20px;
+    margin: 10px 20px;
+    background:transparent;
+    border-radius: 20px;
+    min-height: 40px;
+}
+
+.join-btn a{
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.fine-line{
+    width: 100px;
+    height: 2px;
+    background: #111;
+    display: inline-block;
+    margin: 10px auto;
+}
+/*
+=====================
+    Header
+=====================
+*/
+.tealinux-header .mdl-menu__container {
+    z-index: 50;
+    margin: 0 !important;
+}
+
+.tealinux-mobile-title {
+    display: none !important;
+}
+
+
+.tealinux-logo-image {
+    height: 30px;
+}
+
+
+.tealinux-header  {
+    overflow: visible;
+    background-color: white !important;
+}
+.tealinux-header .mdl-layout__tab-bar ,.tealinux-header .mdl-layout__tab-bar-button {
+    background-color: #fafafa;
+}
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active {
+    color: #FF4081;
+}
+
+
+.tealinux-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+}
+.tealinux-header .mdl-navigation__link, .mdl-menu .mdl-navigation__link{
+    color: black;
+}
+
+/*
+=====================
+    Navigation style
+=====================
+*/
+.tealinux-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 500px;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tealinux-navigation {
+/* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 800px;
+}
+.tealinux-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+}
+
+.tealinux-header .tealinux-navigation .mdl-navigation__link:hover {
+    border-bottom: 3px solid #008000;
+}
+.mdl-navigation__link {
+    /*    color: #111;*/
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.tealinux-drawer {
+    border-right: none;
+}
+
+.tealinux-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+}
+
+.tealinux-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+}
+
+.tealinux-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #008000;
+}
+
+.tealinux-drawer .mdl-layout-title {
+    position: relative;
+    background: #6ab344;
+    height: 160px;
+}
+
+.tealinux-drawer .tealinux-logo-image {
+    position: absolute;
+    bottom: 16px;
+}
+/*
+=====================
+    Container style
+=====================
+*/
+.tealinux-blog-content{
+    padding: 48px 0 0;
+}
+.mdl-layout__header-row {
+    padding: 0px 40px;
+}
+.tealinux-white-space{
+    background-color: white;
+    min-height: 50px;
+    padding: 10px;
+}
+.tealinux-grey-space{
+    background-color: rgba(0,0,0,0.06);
+    min-height: 50px;
+    padding: 10px;
+}
+
+
+.mdl-layout__content{
+    display: block;
+}
+
+.tealinux-slogan{
+  margin: 50px 0 30px;
+}
+.tealinux-slogan h6{
+  display: inline-block;
+  width: 100%;
+  width: 300px;
+}
+.tealinux-slogan span{
+  color: #6AB344;
+}
+/*
+=====================
+    Home style
+=====================
+*/
+.tealinux-download-section {
+    position: relative;
+    height: 90vh;
+    width: auto;
+    background-color: #f3f3f3;
+    background: url('../images/laptop-tealinuxos.png') center 30% no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.tealinux-screen-section {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.tealinux-screen-section h5{
+    display: inline-block;
+    width: 100%;
+    width: 700px;
+    line-height: 30px;
+}
+
+.tealinux-image-link {
+    text-decoration: none;
+}
+
+.tealinux-app {
+    display: inline-block;
+    width: 160px;
+    margin-right: 32px;
+}
+
+.tealinux-app .tealinux-screen-image {
+    width: 40%;
+    z-index: 1;
+}
+
+.tealinux-app-section {
+    position: relative;
+    background: url('../images/kebun-teh-explore-semarang-tealinux.png') center top no-repeat;
+    background-size: cover;
+    height: 800px;
+    /*-webkit-filter: brightness(.5); filter: brightness(.5);*/
+}
+
+/*
+=====================
+    Modal Style
+=====================
+*/
+
+.unduh-btn {
+    -webkit-appearance: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    position: relative;
+    top: 90%;
+    display: block;
+    min-width: 10%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #FFF;
+    /*border-radius: 3px;*/
+    letter-spacing: 2px;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.unduh-btn:hover {
+    background-color: #222;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #222;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 40;
+    -moz-transition: opacity 0.25s ease 0s, visibility 0.35s linear;
+    -o-transition: opacity 0.25s ease 0s, visibility 0.35s linear;
+    -webkit-transition: opacity 0.25s ease, visibility 0.35s linear;
+    -webkit-transition-delay: 0s, 0s;
+    transition: opacity 0.25s ease 0s, visibility 0.35s linear;
+}
+.modal-overlay.state-show {
+    opacity: .7;
+    visibility: visible;
+    -webkit-transition-delay: 0s;
+       -moz-transition-delay: 0s;
+         -o-transition-delay: 0s;
+            transition-delay: 0s;
+    -webkit-transition-duration: 0.2s, 0s;
+       -moz-transition-duration: 0.2s, 0s;
+         -o-transition-duration: 0.2s, 0s;
+            transition-duration: 0.2s, 0s;
+}
+
+.modal-frame {
+  position: fixed;
+  top: 40;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 999999999999999999999;
+  /*     display: table; */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+    -moz-box-align: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+}
+.modal-frame.state-appear {
+  visibility: visible;
+}
+.modal-frame.state-appear .modal-inset {
+  -webkit-animation: modalComeIn 0.25s ease;
+     -moz-animation: modalComeIn 0.25s ease;
+          animation: modalComeIn 0.25s ease;
+  visibility: visible;
+  /* to keep @ final state */
+}
+.modal-frame.state-appear .modal-body {
+  opacity: 1;
+  -webkit-transform: translateY(0) scale(1, 1);
+     -moz-transform: translateY(0) scale(1, 1);
+      -ms-transform: translateY(0) scale(1, 1);
+          transform: translateY(0) scale(1, 1);
+}
+.modal-frame.state-leave {
+  visibility: visible;
+}
+.modal-frame.state-leave .modal-inset {
+  -webkit-animation: modalHeadOut 0.35s ease 0.1s;
+     -moz-animation: modalHeadOut 0.35s ease 0.1s;
+          animation: modalHeadOut 0.35s ease 0.1s;
+  visibility: visible;
+}
+.modal-frame.state-leave .modal-body {
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.35s;
+     -moz-transition-duration: 0.35s;
+       -o-transition-duration: 0.35s;
+          transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+     -moz-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transform: translateY(25px);
+     -moz-transform: translateY(25px);
+      -ms-transform: translateY(25px);
+          transform: translateY(25px);
+}
+
+@-moz-document url-prefix() {
+  .modal-frame {
+    height: calc(100% - 55px);
+  }
+}
+.modal {
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.modal-inset {
+  position: relative;
+  padding: 30px;
+  background-color: white;
+  min-width: 320px;
+  min-height: 126px;
+  margin: auto;
+  visibility: hidden;
+  -webkit-box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.modal-inset .close {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  opacity: .4;
+}
+.modal-inset .close:hover {
+  opacity: 1;
+}
+
+.modal-body {
+  margin: auto;
+  opacity: 0;
+  -webkit-transform: translateY(0) scale(0.8, 0.8);
+     -moz-transform: translateY(0) scale(0.8, 0.8);
+      -ms-transform: translateY(0) scale(0.8, 0.8);
+          transform: translateY(0) scale(0.8, 0.8);
+  -webkit-transition-property: opacity, -webkit-transform;
+     -moz-transition-property: opacity, -moz-transform;
+       -o-transition-property: opacity, -o-transform;
+          transition-property: opacity, transform;
+  -webkit-transition-duration: 0.25s;
+     -moz-transition-duration: 0.25s;
+       -o-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-delay: 0.1s;
+     -moz-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+.modal-body h3 {
+  font-weight: 700;
+  padding-bottom: 22px;
+  display: block;
+  color: #008000;
+  text-align: center;
+}
+.modal-body p {
+  padding-bottom: 2px;
+}
+.modal-body .ps {
+  font-size: 12px;
+  opacity: .8;
+}
+
+@-webkit-keyframes modalComeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0.8, 0.8);
+       -moz-transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+  65.5% {
+    -webkit-transform: scale(1.03, 1.03);
+       -moz-transform: scale(1.03, 1.03);
+        -ms-transform: scale(1.03, 1.03);
+            transform: scale(1.03, 1.03);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+       -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@-moz-keyframes modalComeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0.8, 0.8);
+       -moz-transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+  65.5% {
+    -webkit-transform: scale(1.03, 1.03);
+       -moz-transform: scale(1.03, 1.03);
+        -ms-transform: scale(1.03, 1.03);
+            transform: scale(1.03, 1.03);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+       -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes modalComeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0.8, 0.8);
+       -moz-transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+  65.5% {
+    -webkit-transform: scale(1.03, 1.03);
+       -moz-transform: scale(1.03, 1.03);
+        -ms-transform: scale(1.03, 1.03);
+            transform: scale(1.03, 1.03);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+       -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes modalHeadOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1, 1);
+       -moz-transform: translateY(0) scale(1, 1);
+        -ms-transform: translateY(0) scale(1, 1);
+            transform: translateY(0) scale(1, 1);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(35px) scale(0.97, 0.97);
+       -moz-transform: translateY(35px) scale(0.97, 0.97);
+        -ms-transform: translateY(35px) scale(0.97, 0.97);
+            transform: translateY(35px) scale(0.97, 0.97);
+  }
+}
+@-moz-keyframes modalHeadOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1, 1);
+       -moz-transform: translateY(0) scale(1, 1);
+        -ms-transform: translateY(0) scale(1, 1);
+            transform: translateY(0) scale(1, 1);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(35px) scale(0.97, 0.97);
+       -moz-transform: translateY(35px) scale(0.97, 0.97);
+        -ms-transform: translateY(35px) scale(0.97, 0.97);
+            transform: translateY(35px) scale(0.97, 0.97);
+  }
+}
+@keyframes modalHeadOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1, 1);
+       -moz-transform: translateY(0) scale(1, 1);
+        -ms-transform: translateY(0) scale(1, 1);
+        transform: translateY(0) scale(1, 1);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(35px) scale(0.97, 0.97);
+       -moz-transform: translateY(35px) scale(0.97, 0.97);
+        -ms-transform: translateY(35px) scale(0.97, 0.97);
+            transform: translateY(35px) scale(0.97, 0.97);
+  }
+}
+
+/*
+=====================
+    Wiki style
+=====================
+*/
+.wiki-header{
+    background-color: #555;
+    background-image: url('/images/crissXcross.png');
+}
+
+.wiki-header .mdl-layout__tab-bar ,.wiki-header .mdl-layout__tab-bar-button {
+    background-color: #333;
+    background-image: url('/images/crissXcross.png');
+}
+
+.tealinux-page-title{
+    display: inline-block;
+    position: absolute;
+    /*margin: 15px 0 0 10px;*/
+    top:5px;
+    margin-left: 40px;
+    letter-spacing: 2px;
+    color: black;
+}
+.doc{
+    width: 100%;
+    max-width: 700px;
+    margin: 0px auto;
+    font-size: 16px;
+    line-height: 28px;
+}
+.doc p, .doc li{
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.doc p,.doc li, .doc a{
+    font-weight: 400 !important;
+}
+
+.block-hl{
+/*    background-color: rgba(0, 0, 0, 0.06);*/
+    background-color: #fff;
+    display: block;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 10px auto;
+}
+.mdl-layout__tab-panel{
+    min-height: 90vh;
+}
+
+.desain-section{
+  position: relative;
+  background: transparent url('../images/coffee.jpg') no-repeat scroll center top;
+  background-size: cover;
+  height: 500px;
+}
+.desain-section h2{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans";
+  bottom:50px;
+  padding-left: 50px;
+}
+/*
+=====================
+    Card Style
+=====================
+*/
+.bg-desain .mdl-card__media {
+    background-image: url('/images/road.jpg');
+}
+
+/*
+=====================
+    Footer
+=====================
+*/
+.tealinux-footer {
+    background-color: #fafafa;
+    position: relative;
+}
+
+.tealinux-footer a:hover {
+    color: #008000;
+}
+
+.tealinux-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+}
+
+.tealinux-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+}
+
+.tealinux-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+}
+
+.tealinux-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+}
+
+.tealinux-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+}
+
+.mdl-mega-footer {
+    color: #111;
+}
+
+.tealinux-footer-down{
+    background-color: #008000;
+    color: #E6E6E6;
+}
+.tealinux-footer-down span{
+    font-size: 12px;
+}
+
+.search-icon{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+/*
+=====================
+    Mobile Layout
+=====================
+*/
+@media (max-width: 900px) {
+    .mdl-layout__header-row {
+        padding: 0px 10px !important;
+    }
+
+    .tealinux-download-section {
+        height: 350px;
+    }
+
+    .tealinux-navigation-container {
+        display: none;
+    }
+
+    .tealinux-title {
+        display: none !important;
+    }
+
+    .tealinux-mobile-title {
+        display: block !important;
+        position: absolute;
+        /*    left: calc(50% - 70px);*/
+        left:10px;
+        top: 12px;
+        -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .tealinux-search-box.is-focused ~ .tealinux-mobile-title {
+        opacity: 0;
+    }
+
+    .tealinux-more-button i {
+    /*    display: none;*/
+        color: black;
+    }
+
+    .tealinux-footer .mdl-mega-footer--bottom-section {
+        display: none;
+    }
+    .modal{
+        margin-top:100px;
+    }
+    .modal-frame {
+        position: absolute;
+    }
+    .modal-inset{
+        position: relative;
+        width:320px;
+        padding: 10px !important;
+        margin-top:100px;
+    }
+    .modal-inset .close {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        /*
+        top: 10px;
+        right: 10px;
+        */
+        padding: 10px;
+        opacity: 0.4;
+    }
+}
+
+
+
+.mdl-textfield {
+    padding: 0 10px;
+    bottom: 25px;
+}
+.mdl-textfield__expandable-holder {
+    /*bottom: 20px;*/
+}
+
+
+.mdl-textfield__input {
+    font-size: 12px;
+/*    padding: 4px 3px;*/
+    color: #111;
+    background:  rgba(255, 255, 255, 0.8);
+    margin-top:35px;
+}
+
+
+/*Blog*/
+.mdl-layout__content section:not(:last-of-type) {
+  position: relative;
+  margin-bottom: 48px;
+}
+.tealinux-blog-content section.section--center {
+  max-width: 860px;
+}
+
+.tealinux-blog-content .mdl-grid {
+  position: relative;
+}
+.tealinux-blog-content #features section.section--center {
+  max-width: 620px;
+}
+.tealinux-blog-content section > header{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tealinux-blog-content section > .section__play-btn {
+  min-height: 200px;
+}
+.tealinux-blog-content section > header > .material-icons {
+  font-size: 3rem;
+}
+.tealinux-blog-content section > button {
+  position: absolute;
+  z-index: 99;
+  top: 8px;
+  right: 8px;
+}
+.tealinux-blog-content section .section__circle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+}
+.tealinux-blog-content section .section__text {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding-top: 8px;
+}
+.tealinux-blog-content section .section__text h5 {
+  font-size: inherit;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+.tealinux-blog-content section .section__text a {
+  text-decoration: none;
+}
+.tealinux-blog-content section .section__circle-container > .section__circle-container__circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  margin: 8px 0;
+}
+.tealinux-blog-content section.section--footer .section__circle--big {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 8px 32px;
+}
+.tealinux-blog-content .is-small-screen section.section--footer .section__circle--big {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 8px 16px;
+}
+.tealinux-blog-content section.section--footer {
+  padding: 64px 0;
+  margin: 0 -8px -8px -8px;
+}
+
+.tealinux-blog-content section.section--center .section__text:not(:last-child) {
+  border-bottom: 1px solid rgba(0,0,0,.13);
+}
+.tealinux-blog-content .mdl-card .mdl-card__supporting-text > h3:first-child {
+  margin-bottom: 24px;
+}
+
+/*toko*/
+.tealinux-toko-content {
+    max-width: 930px;
+    padding: 20px 10px;
+    width: 100%;
+    margin: 50px auto;
+}
+.tealinux-toko-content .mdl-card{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  min-height: 360px;
+}
+.tealinux-toko-content .mdl-card__media {
+  box-sizing: border-box;
+  background-size: cover;
+  padding: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer;
+}
+.tealinux-toko-content .mdl-card__media a,
+.tealinux-toko-content .mdl-card__title a {
+  color: inherit;
+}
+.tealinux-toko-content .mdl-card__supporting-text {
+  width: 100%;
+  padding: 16px;
+  min-height: 64px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tealinux-toko-content .mdl-card.something-else {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.tealinux-toko-content .mdl-card__supporting-text strong {
+  font-weight: 400;
+}
+.tealinux-toko-content .mdl-card__media ~ .mdl-card__supporting-text {
+  min-height: 64px;
+}
+.tealinux-toko-content .mdl-card__supporting-text:not(:last-child) {
+  box-sizing: border-box;
+  min-height: 76px;
+}
+
+.tealinux-toko-content .mdl-card__actions:first-child {
+  margin-left: 0;
+}
+.tealinux-toko-content .meta {
+  box-sizing: border-box;
+  padding: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: auto;
+}
+.tealinux-toko-content .meta.meta--fill {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.tealinux-toko-content .something-else .mdl-card__media {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tealinux-toko-content .something-else > button {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  -webkit-transform: translate(0px, -28px);
+      -ms-transform: translate(0px, -28px);
+          transform: translate(0px, -28px);
+}
+.tealinux-toko-content .something-else .mdl-card__media {
+  font-size: 13px;
+  font-weight: 500;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.tealinux-toko-content .something-else .mdl-card__media img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+.tealinux-toko-content .something-else .mdl-card__supporting-text {
+  background-color: #F5F5F5;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+
+.tealinux-toko-content .mdl-card > a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+.tealinux-toko-content .mdl-card h3 {
+  margin: 0;
+}
+.tealinux-toko-content .mdl-card h3 a {
+  text-decoration: none;
+}
+.tealinux-toko-content .mdl-card h3.quote:before, .tealinux-toko-content .mdl-card h3.quote:after {
+  display: block;
+  font-size: 3em;
+  margin-top: 0.5em;
+}
+.tealinux-toko-content .mdl-card h3.quote:before {
+  content: '“';
+}
+.tealinux-toko-content .mdl-card h3.quote:after {
+  content: '”';
+}
+
+.tealinux-toko-content .something-else {
+  overflow: visible;
+  z-index: 10;
+}
+
+
+/*
+=====================
+    Social Button
+=====================
+*/
+
+.modal-body .ico-social{
+  margin: 0 20px;
+}
+
+.ico-facebook, .ico-github, .ico-gplus, .ico-twitter, .ico-twitter-blank, .ico-gplus-blank, .ico-github-blank, .ico-facebook-blank{
+  background: url('/images/social.png') no-repeat;
+}
+.ico-social > span{
+  display: inline-block;
+}
+
+.ico-facebook{
+  background-position: 0 0;
+  width: 30px;
+  height: 30px;
+}
+
+.ico-github{
+  background-position: -33px 0;
+  width: 30px;
+  height: 30px;
+}
+
+.ico-gplus{
+  background-position: -67px -1px ;
+  width: 30px;
+  height: 30px;
+}
+
+.ico-twitter{
+  background-position: -100px -1px;
+  width: 30px;
+  height: 30px;
+}
+
+.ico-facebook-blank{
+  background-position: -7px -35px ;
+  width: 10px;
+  height: 20px;
+}
+
+.ico-github-blank{
+  background-position: -35px -35px ;
+  width: 20px;
+  height: 20px;
+}
+
+.ico-gplus-blank{
+  background-position: -72px -35px ;
+  width: 20px;
+  height: 18px;
+}
+
+.ico-twitter-blank{
+  background-position: -109px -37px ;
+  width: 12px;
+  height: 20px;
+}
+
+
+/*
+=====================
+    Blog Post
+=====================
+*/
+
+.tealinux-blog-post .blog__posts {
+  max-width: 900px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.tealinux-blog-post.mdl-layout .mdl-layout__content {
+  padding-top: 100px;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tealinux-blog-post .mdl-card__title {
+  padding: 16px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.tealinux-blog-post .mdl-card__media {
+  box-sizing: border-box;
+  background-size: cover;
+  padding: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer;
+}
+.tealinux-blog-post .mdl-card__media h3{
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  font-weight: 700;
+}
+.doc p,.doc h3, .doc h4,.doc h5{
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+}
+
+.tealinux-blog-post .mdl-card__media a,
+.tealinux-blog-post .mdl-card__title a {
+  color: inherit;
+}
+.tealinux-blog-post .mdl-card__supporting-text {
+  width: 100%;
+  padding: 16px;
+  min-height: 64px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tealinux-blog-post .mdl-card__supporting-text strong {
+  font-weight: 900;
+}
+.tealinux-blog-post .mdl-card__media ~ .mdl-card__supporting-text {
+  min-height: 64px;
+}
+.tealinux-blog-post .mdl-card__supporting-text:not(:last-child) {
+  box-sizing: border-box;
+  min-height: 76px;
+}
+
+.tealinux-blog-post .meta > .meta__favorites{
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.tealinux-blog-post .meta > .meta__favorites .material-icons {
+  font-size: 2em;
+  cursor: pointer;
+  margin-left: 12px;
+}
+.tealinux-blog-post .mdl-card .meta.meta--fill {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.tealinux-blog-post .meta > *:first-child {
+  margin-right: 16px;
+}
+.tealinux-blog-post .meta > * {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.tealinux-blog-post.is-small-screen .blog__posts > .mdl-card.coffee-pic {
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+.tealinux-blog-post.is-small-screen .blog__posts > .mdl-card.something-else {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.tealinux-blog-post .blog__posts > .demo-nav {
+  margin: 12px 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+}
+.tealinux-blog-post .blog__posts > .demo-nav > .demo-nav__button {
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.tealinux-blog-post .blog__posts > .demo-nav .mdl-button {
+  color: rgba(0,0,0,0.54);
+  background-color: white;
+}
+.tealinux-blog-post .blog__posts > .demo-nav > .demo-nav__button:first-child .mdl-button {
+  margin-right: 16px;
+}
+.tealinux-blog-post .blog__posts > .demo-nav > .demo-nav__button:last-child .mdl-button {
+  margin-left: 16px;
+}
+
+.tealinux-blog-post .mdl-card h3 a {
+  text-decoration: none;
+}
+
+.tealinux-blog-post .custom-header {
+  background-color: transparent;
+}
+.tealinux-blog-post .blog__posts > .mdl-card .mdl-card__media {
+  background-color: #333;
+  background-image: url('images/road_big.jpg');
+  height: 280px;
+}
+.tealinux-blog-post .comments {
+  background-color: #EEE;
+}
+.tealinux-blog-post .meta > * {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tealinux-blog-post .meta + .mdl-card__supporting-text {
+  border: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.tealinux-blog-post .meta + .mdl-card__supporting-text p {
+  max-width: 512px;
+  margin: 16px auto;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.tealinux-blog-post .comments {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 32px;
+  box-sizing: border-box;
+}
+.tealinux-blog-post .comments > form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-diretion: row;
+  margin-bottom: 16px;
+}
+.tealinux-blog-post .comments > form .mdl-textfield {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 16px;
+  color: rgb(97, 97, 97);
+}
+/* Workaround for Firefox.
+ * User agent stylesheet kept overwriting the font in FF only.
+ */
+.tealinux-blog-post .comments > form .mdl-textfield .mdl-textfield__input {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+.tealinux-blog-post .comments > form .mdl-textfield input,
+.tealinux-blog-post .comments > form .mdl-textfield textarea {
+  resize: none;
+}
+.tealinux-blog-post .comments > form button {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.24);
+  color: white;
+}
+.tealinux-blog-post .comments .comment {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.tealinux-blog-post .comments .comment > .comment__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+.tealinux-blog-post .comments .comment > .comment__header > .comment__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 16px;
+}
+.tealinux-blog-post .comments .comment > .comment__header > .comment__author {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.tealinux-blog-post .comments .comment > .comment__text {
+  line-height: 1.5em;
+}
+.tealinux-blog-post .comments .comment > .comment__actions {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8em;
+  margin-top: 16px;
+}
+.tealinux-blog-post .comments .comment > .comment__actions button {
+  margin-right: 16px;
+  color: rgba(0, 0, 0, 0.24);
+}
+.tealinux-blog-post .comments .comment > .comment__answers {
+  padding-top: 32px;
+  padding-left: 48px;
+}
+
+.tealinux-blog-post .demo-back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 9999;
+}
+.tealinux-blog-post a {
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.tealinux-blog-post .section-spacer {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.tealinux-blog-post .minilogo {
+  width: 44px;
+  height: 44px;
+  background-image: url('images/avatar.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border-radius: 22px;
+  background-color: #F5F5F5;
+}
+
+/*contoh*/
+
+
+.isotope {
+  display: inline-block;
+  margin-top: 60px;
+  width: 100%;
+  width: 900px;
+}
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-item {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  color: #262524;
+}
+
+.element-item .name {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 12px;
+  /*font-weight: 300;*/
+  /*color: #fafafa;*/
+}
+.element-item:hover{
+  /*background: white;*/
+}
+/* ---- .element-item ---- */
+/*
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }*/
+
+
+.tealinux-kontribusi-content .gabung-section{
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+
+.tealinux-kontribusi-content .gabung-section h3{
+    text-transform: capitalize;
+}
+
+.tealinux-kontribusi-content .mdl-tabs__tab-bar{
+    border-bottom: 0;
+    height: 80px;
+    overflow-x:auto;
+}
+
+.tealinux-kontribusi-content .mdl-tabs__tab{
+
+    padding: 0 60px;
+    margin: 0 20px;
+    border-radius: 30px;
+    min-height: 40px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-decoration: none;
+    border:2px solid #008000;
+    overflow: visible;
+}
+
+.tealinux-kontribusi-content .mdl-tabs__tab.is-active{
+    background-color: #008000;
+    color: #fff !important;
+}
+
+.tealinux-kontribusi-content .mdl-tabs__tab.is-active::after{
+    background: transparent !important;
+}
+
+
+.tealinux-kontribusi-content .mdl-tabs__panel{
+    margin: 5em auto;
+    min-height: 50vh;
+    width: 100%;
+    max-width: 700px;
+}
+
+.tealinux-kontribusi-content p, .tealinux-kontribusi-content li{
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.tealinux-kontribusi-content .breathe{
+    margin: 20px auto;
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #FF4081;
+    content: "";
+}

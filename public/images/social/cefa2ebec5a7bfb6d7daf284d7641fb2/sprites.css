@@ -1,0 +1,52 @@
+.ico-facebook, .ico-github, .ico-gplus, .ico-twitter, .ico-facebook-blank, .ico-github-blank, .ico-gplus-blank, .ico-twitter-blank{
+	background: url(sprites.png) no-repeat;
+}
+
+.ico-facebook{
+	background-position: 0 0;
+	width: 30px;
+	height: 30px;
+}
+
+.ico-github{
+	background-position: -33px 0;
+	width: 30px;
+	height: 30px;
+}
+
+.ico-gplus{
+	background-position: -67px -1px ;
+	width: 30px;
+	height: 30px;
+}
+
+.ico-twitter{
+	background-position: -100px -1px ;
+	width: 30px;
+	height: 30px;
+}
+
+.ico-facebook-blank{
+	background-position: -7px -35px ;
+	width: 10px;
+	height: 20px;
+}
+
+.ico-github-blank{
+	background-position: -35px -35px ;
+	width: 20px;
+	height: 20px;
+}
+
+.ico-gplus-blank{
+	background-position: -72px -35px ;
+	width: 20px;
+	height: 18px;
+}
+
+.ico-twitter-blank{
+	background-position: -109px -37px ;
+	width: 12px;
+	height: 20px;
+}
+
