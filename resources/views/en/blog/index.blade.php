@@ -172,7 +172,7 @@
             <div class="mdl-mega-footer--middle-section text-center">
 
                 <h4 class="mdl-typography--font-light">
-                    Dapatkan TeaLinuxOS dengan geratis, namun jika anda menyukai kami, anda dapat traktir kami
+                    get free tealinuxOS, but if u love us, u can treating us
                     <span class=" icon-emoticon-smile" aria-hidden="true"></span>
                 </h4>
                 <button id="btn-donate" class="mdl-button mdl-js-button mdl-js-ripple-effect sistem-btn"><a class="" href="https://www.bountysource.com/teams/tealinuxos"> Donasi </a></button>
