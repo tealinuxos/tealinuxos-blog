@@ -345,7 +345,7 @@
                         <br/>
                         <h4>Lapor Hama</h4>
                         <img src="/tealinuxos8_docs/img/screenshot/lapor-hama.png" width="700px"></br>
-                        Lapor Hama is an application to report any error user experience. The report will be repaired as soon as possible so TeaLinuxOS will be better and bettter. Beside this application you can visit <a href="http://tealinuxos.org/lapor">tealinuxos.org/lapor</a>
+                        Lapor Hama is an application to report any bug experienced by user in TeaLinuxOS. The will be patched as soon as possible in order to make TeaLinuxOS better. To use this application you can visit <a href="http://tealinuxos.org/lapor">tealinuxos.org/lapor</a>
 
                     </article>
 

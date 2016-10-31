@@ -32,7 +32,7 @@
                         <div class="demo-card-wide mdl-card mdl-shadow--2dp">
                             <div class="mdl-card__supporting-text mdl-typography--text-center">
 
-                                <h4>Terimakasih telah melaporkan hama TeaLinuxOS (:</h4>
+                                <h4>Thank's for reporting  TealinuxOS bug :) </h4>
                                 <h6>Kami akan segera memperbaikinya, untuk TeaLinuxOS yang lebih baik.</h6>
                             </div>
                         </div>

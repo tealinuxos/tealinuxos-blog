@@ -106,7 +106,7 @@ Route::group(['middleware' => ['auth']], function()
 	Route::post('/updatestatus/','BugController@updatestatus');
 });
 
-//users profile
+
 //en
 Route::get('en/user/{id}','EnUserController@profile')->where('id', '[0-9]+');
 //id
