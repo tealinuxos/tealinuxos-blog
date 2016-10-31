@@ -30,7 +30,8 @@
                             <h3>TeaLinuxOS 8 "Peppermint"</h3>
 
                             <!-- <p>Unduh TeaLinuxOS versi 7 "Rosella"</p> -->
-                            <p>Silahkan pilih arsitektur sistem komputer anda</p>
+                            architecture
+                            <p>Let's </p>
                             <button class="mdl-button mdl-js-button mdl-js-ripple-effect sistem-btn"><a class="" href="">32 bit</a></button>
                             <button class="mdl-button mdl-js-button mdl-js-ripple-effect sistem-btn"><a class="" href="">64 bit</a></button>
                             <a target="blank" href="http://pinguin.dinus.ac.id/iso/tealinuxos/"><p class="ps">**untuk mengunduh versi lain</p></a>
@@ -51,11 +52,8 @@
                 </div>
             </div>
             <!-- end of Modal download -->
-
-
             <div class="modal-overlay"></div>
             <!-- end modal download section -->
-
             <button class="unduh-btn open mdl-js-ripple-effect">
                 Download
             </button>
@@ -112,7 +110,7 @@
         <!-- Aplikasi tealinuxos -->
         <div class="tealinux-app-section brightness">
             <div class="tealinux-screen-section mdl-typography--text-center">
-                <h3 class="">Aplikasi di TeaLinuxOS</h3>
+                <h3 class="">Application on TeaLinuxOS</h3>
                 <br/>
 
                 <div id="filters" class="button-group">

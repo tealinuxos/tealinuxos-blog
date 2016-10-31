@@ -42,8 +42,8 @@ TeaLinux, developed together by Dinus Open Source Community with tagline
 	public function wiki(){
 
 
-		SEO::setTitle('Wiki - Tealinux OS');
-		SEO::setDescription('Temukan solusi perihal penggunaan TeaLinux OS pada halaman Wiki Tealinx OS');
+		SEO::setTitle('Tealinux OS - Wiki');
+		SEO::setDescription('Temukan solusi perihal penggunaan TeaLinux OS pada halaman Wiki Tealinux OS');
 		SEO::addImages('http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s1600/tealinuxos2.png');
 
 		//SEO::opengraph()->setUrl('http://current.url.com');
@@ -55,7 +55,7 @@ TeaLinux, developed together by Dinus Open Source Community with tagline
 	public function kontribusi(){
 
 
-		SEO::setTitle('Yuk Kontribusi - Tealinux OS');
+		SEO::setTitle('Tealinux OS - Yuk Kontribusi');
 		SEO::setDescription('Karena berkontribusi gak akan rugi :D');
 		SEO::addImages('http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s1600/tealinuxos2.png');
 
@@ -107,7 +107,7 @@ TeaLinux, developed together by Dinus Open Source Community with tagline
 	}
 	public function toko(){
 
-		SEO::setTitle('Toko - Tealinux OS');
+		SEO::setTitle('Tealinux OS - Store ');
 		SEO::setDescription('Dukung proyek Tealinux OS dan dapatkan merchendise khas TeaLinux OS');
 		SEO::addImages('http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s1600/tealinuxos2.png');
 
@@ -117,7 +117,7 @@ TeaLinux, developed together by Dinus Open Source Community with tagline
 
 	public function detail(){
 
-		SEO::setTitle('Detail Blog - Tealinux OS');
+		SEO::setTitle('Tealinux OS - Detail Blog ');
 		SEO::setDescription('Detail Blog Tealinux OS');
 		SEO::addImages('http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s1600/tealinuxos2.png');
 

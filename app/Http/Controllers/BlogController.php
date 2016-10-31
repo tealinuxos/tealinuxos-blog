@@ -38,7 +38,7 @@ class BlogController extends Controller {
 
 
 		SEO::setTitle('Wiki - Tealinux OS');
-		SEO::setDescription('Temukan solusi perihal penggunaan TeaLinux OS pada halaman Wiki Tealinx OS');
+		SEO::setDescription('Temukan solusi perihal penggunaan TeaLinux OS pada halaman Wiki Tealinux OS');
 		SEO::addImages('http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s1600/tealinuxos2.png');
 
 		//SEO::opengraph()->setUrl('http://current.url.com');
