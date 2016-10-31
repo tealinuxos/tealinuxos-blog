@@ -12,7 +12,7 @@
                             <div class="mdl-cell mdl-cell--12-col mdl-color-text-grey-700">
                                 <div class="tealinux-white-space">
                                     <div class="doc mdl-color-text--grey-700 mdl-card__supporting-text">
-                                        <h2 class="mdl-typography--text-center">LAPOR BUG</h2>
+                                        <h2 class="mdl-typography--text-center">BUG REPORT</h2>
                                     </div>
 
                                 </div>
@@ -20,7 +20,7 @@
                             <form action="#">
                                 <div class="mdl-textfield mdl-js-textfield">
                                     <input class="mdl-textfield__input" type="text"  name="nama" value="@if(!old('nama')){{$bug->nama}}@endif{{ old('bug') }}">
-                                    <label class="mdl-textfield__label" for="sample1">Nama</label>
+                                    <label class="mdl-textfield__label" for="sample1">Name</label>
                                 </div>
                                 <div class="mdl-textfield mdl-js-textfield">
                                     <input class="mdl-textfield__input" type="email" name="email" value="@if(!old('email')){{$bug->email}}@endif{{ old('bug') }}">
@@ -28,7 +28,7 @@
                                 </div>
                                 <div class="mdl-textfield mdl-js-textfield">
                                     <input class="mdl-textfield__input" type="text" name="judul_bug" value="@if(!old('judul_bug')){{$bug->judul_bug}}@endif{{ old('bug') }}">
-                                    <label class="mdl-textfield__label" for="sample1">Judul Bug</label>
+                                    <label class="mdl-textfield__label" for="sample1">Bug Title</label>
                                 </div>
                                 <div class="mdl-textfield mdl-js-textfield">
                                     <input class="mdl-textfield__input" type="text" name="bug"value="@if(!old('bug')){{$bug->bug}}@endif{{ old('bug') }}">
@@ -36,7 +36,7 @@
                                 </div>
                             </form>
                             <input type="submit" name='save'  value = "Perbarui"/>
-                            <a href="{{ url('/delete/'.$bug->id) }}"  >Hapus</a>
+                            <a href="{{ url('/delete/'.$bug->id) }}"  >Delete</a>
                         </div>
                     </div>
                 </section>
