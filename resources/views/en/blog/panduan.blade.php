@@ -406,7 +406,7 @@
 
                     <hr>
 
-                    <h2 class="title" id="print-dan-scan"> Print dan Scan</h2>
+                    <h2 class="title" id="print-dan-scan"> Print and Scan</h2>
 
                     <h3 id="penggunaan-printer" class="sub-title"> Penggunaan Printer </h3>
                     <article>
